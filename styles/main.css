@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #050505;
+}
+nav {
+  background-color: #050505; /* #02182c;*/
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.center {
+  text-align: center;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  cursor: pointer;
+
+  color: grey;
+  letter-spacing: 0.1rem;
+}
+
+/* ul li:hover {
+  font-size: 20px;
+  padding-bottom: 5px;
+  color: #fff;
+  border-bottom: 1px solid white;
+} */
+
+nav .header {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .header .logo {
+  font-size: 40px;
+  font-weight: 600px;
+}
+
+nav .header .links ul li {
+  margin: 30px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 3;
+  transition: all 0.3s ease-out;
+}
+
+nav .header .links ul li:hover {
+  color: #fff;
+  font-size: 15px;
+  /* border-bottom: 1px solid white; */
+}
+
+nav .header .social ul li i {
+  margin: 10px;
+  color: grey;
+  transition: all 0.3s ease-out;
+}
+
+nav .header .social ul li i:hover {
+  color: #fff;
+  font-size: 20px;
+}
+/* Intro css */
+
+/* intro text */
+.intro {
+  margin-left: 25%;
+  height: 80vh;
+  margin-top: 200px;
+  display: flex;
+}
+
+.intro .intro-text .hello {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.333;
+  color: #cf1767;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+.intro .intro-text .desc {
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  width: 600px;
+  margin-bottom: 100px;
+  font-family: "Frank Ruhl Libre", serif;
+}
+
+.intro .intro-text .scroll {
+  color: grey;
+  font-size: 0.8rem;
+  line-height: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: absolute;
+  cursor: pointer;
+}
+
+.intro .intro-text .scroll::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 195px;
+  height: 1px;
+  width: 72px;
+  background-color: #cf1767;
+}
+/* portrait */
+.intro .portrait {
+  background-image: url("../img/portrait.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-width: 660px;
+  transition: all 100ms ease;
+}
+
+.portrait:hover {
+  opacity: 0.7;
+}
+
+/* About */
+.about {
+  background-color: #fff;
+  padding-top: 50px;
+}
+
+.about .about-header {
+  color: black;
+  margin-left: 25%;
+  font-weight: 600;
+  font-size: 1.7rem;
+  line-height: 1.176;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.about-header::before {
+  content: "";
+  position: absolute;
+  top: -57%;
+  left: 0px;
+  height: 2px;
+  width: 131px;
+  background-color: #cf1767;
+}
+
+.about .about-container {
+  display: flex;
+  margin-left: 23%;
+}
+
+.about .about-container div {
+  color: black;
+}
+
+.about .about-container .box-1 {
+  margin-right: 200px;
+  width: 450px;
+  line-height: 28px;
+}
+
+.about .about-container .box-2 {
+  width: 450px;
+  line-height: 28px;
+}
+
+.btn {
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 2.6rem;
+  padding: 0 3.2rem;
+  margin: 0 0.4rem 1.6rem 0;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 80px;
+  transition: all 400ms;
+}
+
+.btn:hover {
+  background-color: #cf1767;
+  color: #fff;
+}
